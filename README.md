@@ -1,2 +1,1 @@
-# resto.github.io
-Rabota #2
+https://illusionnier.github.io/resto
