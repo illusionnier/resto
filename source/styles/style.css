@@ -1,0 +1,812 @@
+
+body {
+    margin: 0;
+    font-family: Roboto, serif;
+}
+.logo {
+    width: 170px;
+    height: 110px;
+    padding-right: 25px;
+}
+.container {
+    margin: 0px 166px;
+}
+.cart-logo {
+    width: 130px;
+    height: 100px;
+}
+.cart-logo:hover {
+    animation: cart-anim 2s ease 0s infinite normal forwards;
+
+}
+.header {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(88, 87, 87, 0.5) ), url(../img/bg.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-line {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 30px;
+
+    margin-right: 25px;
+
+    transition: color 0.2s linear;
+}
+.nav-item:hover {
+    color: rgb(255, 108, 3);
+}
+.cart {
+    border-right: 2px solid white;
+}
+.num {
+    color: honeydew;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 35px;
+    transition: color 0.2s linear;
+}
+.num:hover {
+    color: rgb(255, 108, 3);
+}
+.phone-text {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 25px;
+}
+.phone-holder {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.phone-image img {
+    width: 30px;
+    height: 30px;
+    padding-right: 3px;
+}
+.button {
+    background-color: rgb(255, 108, 3);
+    text-decoration: none;
+    color: white;
+    padding: 14px 18px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 10px;
+    transition: background-color 0.2s linear;
+}
+.button:hover {
+    background-color: rgb(35, 154, 22);
+}
+.header-down {
+    position: relative;
+}
+.header-title {
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-size: 80px;
+    font-weight: 200;
+
+    text-align: center;
+    position: absolute;
+    left: 0;
+
+    margin-top: 180px;
+    margin-bottom: 12px;
+}
+.header-suptitle {
+    color: rgb(255, 108, 3);
+    font-size: 60px;
+    font-style: italic;
+}
+.header-suptitle:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 300px;
+    background-color: white;
+    top: 282px;
+    left: 97px;
+}
+.header-suptitle:before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 300px;
+    background-color: white;
+    top: 282px;
+    left: 406px;
+}
+.header-button {
+    background-color: rgb(255, 108, 3);
+    padding: 14px 28px;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Roboto, serif;
+    text-decoration: none;
+    transition: background-color 0.2s linear;
+}
+.header-button:hover {
+    background-color: rgb(35, 154, 22);
+}
+.card {
+    background-color: white;
+    width: 349px;
+    box-shadow: 10px 10px 40px 20px #0000001A;
+    margin-right: 31px;
+    margin-top: -20px;
+    padding: 20px 10px;
+}
+.cards-holder {
+    display: flex;
+    justify-content: center;
+}
+.card-img img {
+    height: 100px;
+    width: 100px;
+}
+.card-img{
+    display: flex;
+    justify-content: center; 
+    padding-top: 31px;
+}
+.card-title{
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    justify-content: center; 
+    margin-bottom: 20px;
+    font-size: 29px;
+    color: rgb(40, 40, 40);
+    font-weight: 400;
+}
+.card-desc{
+    font-family: "Roboto", serif;
+    text-align: center;
+    font-size: 25px;
+    color: #656363;
+    font-weight: 300;
+}
+.card-desc span {
+    color: rgb(255, 108, 3);
+}
+.history {
+    margin-top: 150px;
+    padding-bottom: 200px;
+}
+.history-title span {
+    color: rgb(255, 108, 3);
+}
+.history-title {
+    font-family: "Roboto Slab", serif;
+    font-size: 55px;
+    font-weight: 300;
+    color: rgb(40, 40, 40);
+    text-align: center;
+    width: 600px;
+    margin-top: 21px;
+
+}
+.history-desc {
+    font-family: "Roboto", serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: #656363;
+    width: 555px;
+    text-align: justify;
+    text-indent: 30px;
+    word-spacing: 2px;
+}
+.history-number {
+    display: flex;
+    width: 555px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.number-item {
+    margin-right: 60px;
+    text-align: center;
+    font-size: 35px;
+    color: #656363;
+    font-weight: 200;
+}
+.number-item span {
+    display: block;
+    color: rgb(255, 108, 3);
+    font-weight: 400;
+    font-size: 45px;
+}
+.history-imgs {
+    position: relative;
+}
+.history-imgs img {
+    top: -770px;
+    left: 650px;
+    position: absolute;
+    width: 900px;
+    height: 900px;
+}
+.black-block {
+    background-image: url(../img/bg-dn.png);
+    padding: 60px 0px;
+}
+.UpLeft {
+    font-family: "Roboto Slab", serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: rgb(255, 108, 3);
+
+    margin-bottom: 20px;
+}
+.DnLeft {
+    font-family: "Roboto", serif;
+    font-size: 30px;
+    font-weight: 200;
+    color: white;
+}
+.r-btn {
+    background-color: rgba(235, 235, 235, 0.5);
+    text-decoration: none;
+    color: black;
+    padding: 14px 18px;
+    font-weight: 500;
+    font-size: 35px;
+    margin-left: 10px;
+    transition: background-color 0.2s linear;
+}
+.r-btn:hover {
+    background-color: rgb(35, 154, 22);
+}
+.block-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.disches-title {
+    font-family: "Roboto Slab", serif;
+    color: rgb(255, 108, 3);
+    font-weight: 300;
+    font-size: 55px;
+    text-align: center;
+    padding-top: 130px;
+    margin-bottom: 135;
+}
+.disches-title span {
+    color: black;
+}
+.spec-menu {
+    width: 700px;
+    height: 700px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+}
+.menu-itm {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+}
+.menu-img {
+    margin-right: 20px;
+}
+.itm {
+    width: 215px;
+    height: 215px;
+}
+.menu-text {
+    font-family: "Roboto", serif;
+    color: black;
+    font-weight: 300;
+    font-size: 35px;
+    margin-left: 20px;
+}
+.menu-text span {
+    font-family: "Roboto", serif;
+    color:  rgb(255, 108, 3);
+    font-weight: 100; 
+}
+.big-menu {
+    background-image: url(../img/mn-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+}
+.big-menu-title {
+    font-family: "Roboto Slab", serif;
+    color: white;
+    font-weight: 300;
+    font-size: 55px;
+    padding-top: 95px;
+    text-align: center;
+    padding-bottom: 30px;
+    text-decoration: underline 3px;
+}
+.big-menu-title span {
+    color: rgb(255, 108, 3);
+}
+.big-menu-items {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.salads-drinks {
+    display: block;
+}
+.salads {
+    border: 7px dotted white;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+}
+.salads h3 {
+    font-family: "Roboto Slab", serif;
+    color: rgb(255, 108, 3);
+    font-size: 40px;
+    font-weight: 200; 
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.salad {
+    font-family: "Roboto", serif;
+    color: white; 
+    text-align: left;
+    list-style-type: none;
+    padding-left: 5px;
+}
+.salad span {
+    font-size: 30px;
+    font-weight: 100;
+}
+ul.salad li { clear: both; }
+ul.salad li span:first-child {
+	float: left;
+	padding: 0 .4em 0 0;
+	margin: 0;
+}
+ul.salad li span + span {
+	float: right;
+	padding: 0 0 0 .4em;
+	margin: 5px;
+}
+ul.salad li:after {
+	content: "";
+	display: block;
+	overflow: hidden;
+	height: 1em;
+	border-bottom: 4px dotted;
+}
+.drinks {
+    border: 7px dotted white;
+    margin-right: 70px;
+    padding: 10px 15px;
+}
+.drinks h3 {
+    font-family: "Roboto Slab", serif;
+    color: rgb(255, 108, 3);
+    font-size: 40px;
+    font-weight: 200; 
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.drink {
+    font-family: "Roboto", serif;
+    color: white; 
+    text-align: left;
+    list-style-type: none;
+    padding-left: 5px;
+}
+.drink span {
+    font-size: 30px;
+    font-weight: 100;
+}
+ul.drink li { clear: both; }
+ul.drink li span:first-child {
+	float: left;
+	padding: 0 .4em 0 0;
+	margin: 0;
+}
+ul.drink li span + span {
+	float: right;
+	padding: 0 0 0 .4em;
+	margin: 5px;
+}
+ul.drink li:after {
+	content: "";
+	display: block;
+	overflow: hidden;
+	height: 1em;
+	border-bottom: 4px dotted;
+}
+.pastas-hotters {
+    display: block;
+}
+.pastas {
+    border: 7px dotted white;
+    margin-left: 150px;
+    padding: 10px 15px;
+    margin-bottom: 45px;
+}
+.pastas h3 {
+    font-family: "Roboto Slab", serif;
+    color: rgb(255, 108, 3);
+    font-size: 40px;
+    font-weight: 200; 
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.pasta {
+    font-family: "Roboto", serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 100; 
+    list-style-type: none;
+    padding-left: 5px;
+}
+.pasta span {
+    font-size: 30px;
+    font-weight: 100;
+}
+ul.pasta li { clear: both; }
+ul.pasta li span:first-child {
+	float: left;
+	padding: 0 .4em 0 0;
+	margin: 0;
+}
+ul.pasta li span + span {
+	float: right;
+	padding: 0 0 0 .4em;
+	margin: 5px;
+}
+ul.pasta li:after {
+	content: "";
+	display: block;
+	overflow: hidden;
+	height: 1em;
+	border-bottom: 4px dotted;
+}
+.hotters {
+    border: 7px dotted white;
+    margin-left: 150px;
+    padding: 10px 15px;
+    margin-top: 20px;
+}
+.hotters h3 {
+    font-family: "Roboto Slab", serif;
+    color: rgb(255, 108, 3);
+    font-size: 40px;
+    font-weight: 200; 
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.hots {
+    font-family: "Roboto", serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 100; 
+    list-style-type: none;
+    padding-left: 5px;
+}
+.hots span {
+    font-size: 30px;
+    font-weight: 100;
+}
+ul.hots  li { clear: both; }
+ul.hots  li span:first-child {
+	float: left;
+	padding: 0 .4em 0 0;
+	margin: 0;
+}
+ul.hots  li span + span {
+	float: right;
+	padding: 0 0 0 .4em;
+	margin: 5px;
+}
+ul.hots li:after {
+	content: "";
+	display: block;
+	overflow: hidden;
+	height: 1em;
+	border-bottom: 4px dotted;
+}
+.title-mi {
+    text-align: center;
+}
+.mic-title {
+    font-family: "Roboto Slab", serif;
+    color: rgb(255, 108, 3);
+    font-weight: 300;
+    font-size: 55px;
+}
+.mic-title span {
+    color: black;
+}
+.miche {
+    background-color: #E5E5E5;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.miche-txt1 {
+    font-family: "Roboto", serif;
+    font-size: 25px;
+    font-weight: 200;
+    color: #656363;
+    width: 600px;
+    text-align: justify;
+    text-indent: 30px;
+    word-spacing: 2px;
+    text-indent: 30px;
+}
+.miche-txt2 {
+    font-family: "Roboto", serif;
+    font-size: 25px;
+    font-weight: 200;
+    color: #656363;
+    width: 600px;
+    text-align: justify;
+    text-indent: 30px;
+    word-spacing: 2px;
+    text-indent: 30px;
+}
+.miche-img {
+    width: 750px;
+    height: 350px;
+    margin-left: 150px;
+}
+.mipic {
+    display: flex;
+    align-items: center;
+}
+.footer {
+    background-color: #000;
+    padding: 50px 0px;
+    color: white;
+    text-align: center;
+}
+
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+.burger {
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 1700px) {
+    .block-holder {
+        display: block;
+    }
+    .UpLeft {
+        text-align: center;
+    }
+    .DnLeft {
+        text-align: center;
+    }
+    .right-side {
+        text-align: center;
+    }
+    .mit {
+        text-align: justify;
+    }
+    .miche-txt1  {
+        width: 1200px;
+    }
+    .miche-txt2 {
+        width: 1200px;
+    }
+    .mipic {
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+    .nav,
+    .cart,
+    .phone,
+    .btn {
+        display: none;
+    }
+}
+
+
+
+@keyframes cart-anim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateX(-28px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateX(-26px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateX(-13px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateX(-6.5px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateX(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87%,
+	98% {
+		animation-timing-function: ease-out;
+		transform: translateX(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
